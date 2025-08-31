@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Welcome to CoMeet Café - a cozy place to enjoy freshly brewed coffee, pastries, and a warm atmosphere. Explore our menu, meet our team, and experience the love behind every cup.">
+
+    <title>CoMeet - Have Coffee and Meet</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+
+<body class="bg-[#FAF7F2]">
+
+    <!-- Navbar -->
+    <nav class="bg-[#EED6BE] rounded-t-lg relative">
+        <div class="container mx-auto max-w-screen-xl flex justify-between items-center px-4 py-2">
+            <!-- Logo -->
+            <div class="flex items-center">
+                <img class="h-16" src="./icons/logo.png" alt="Coffee icon">
+                <img class="h-10" src="./icons/name.png" alt="Coffee icon">
+            </div>
+
+            <!-- Links -->
+            <ul class="nav-links hidden md:flex gap-6 font-bold">
+                <li><a href="index.html"
+                        class="link-underline text-[#733D25] text-2xl hover:text-[#A0522D] px-2">Home</a></li>
+
+                <li><a href="menu.html"
+                        class="link-underline text-[#733D25] text-2xl hover:text-[#A0522D] px-2">Menu</a></li>
+
+                <li><a href="about.html" class="link-underline text-[#733D25] text-2xl hover:text-[#A0522D] px-2">About
+                        Us</a></li>
+
+                <li><a href="contact.html"
+                        class="link-underline text-[#733D25] text-2xl hover:text-[#A0522D] px-2">Contact</a></li>
+            </ul>
+
+
+
+
+            <!-- Mobile Menu Button -->
+            <button class="hamburgerBtn md:hidden text-[#733D25] text-2xl font-bold">☰</button>
+
+            <!-- Mobile Dropdown Menu -->
+            <ul
+                class="mobile-menu hidden absolute top-16 right-4 flex-col p-4 space-y-0 text-[#332025] font-medium md:hidden z-50 bg-white rounded-lg shadow-lg">
+                <li class="border-b border-[#733D25] last:border-b-0">
+                    <a href="index.html" class="block py-2 text-[#733D25] hover:text-[#A0522D]">Home</a>
+                </li>
+                <li class="border-b border-[#733D25] last:border-b-0">
+                    <a href="menu.html" class="block py-2 text-[#733D25] hover:text-[#A0522D]">Menu</a>
+                </li>
+                <li class="border-b border-[#733D25] last:border-b-0">
+                    <a href="about.html" class="block py-2 text-[#733D25] hover:text-[#A0522D]">About Us</a>
+                </li>
+                <li>
+                    <a href="contact.html" class="block py-2 text-[#733D25] hover:text-[#A0522D]">Contact</a>
+                </li>
+            </ul>
+    </nav>
+
+    <!-- Navbar ends here -->
+
+    <!-- Hero Section -->
+    <section class="w-full bg-cover bg-center flex items-center justify-center text-center px-4 rounded-b-lg relative h-[650px]" style="background-image: url('bg-img/contact.jpg')">
+    </section>
+    <!-- Hero Section ends here-->
+
+
+    <!-- Contact Form Section -->
+    <section class="py-12 px-4">
+        <div class="container mx-auto max-w-4xl bg-white rounded-2xl shadow-lg p-8">
+            <h2 class="text-3xl font-bold text-[#733D25] mb-6 text-center">Get in Touch</h2>
+            <p class="text-gray-600 mb-6 text-center">Have questions or feedback? We'd love to hear from you!</p>
+
+ <form onsubmit="event.preventDefault(); window.location.href='thankyou.html';" class="grid grid-cols-1 gap-6">
+    <div>
+        <label for="name" class="block text-[#733D25] font-semibold mb-2">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#602B0F]" required>
+    </div>
+    <div>
+        <label for="email" class="block text-[#733D25] font-semibold mb-2">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#602B0F]" required>
+    </div>
+    <div>
+        <label for="message" class="block text-[#733D25] font-semibold mb-2">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Write your message..." class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#602B0F]" required></textarea>
+    </div>
+    <div class="text-center">
+        <button type="submit" class="bg-[#602B0F] text-white px-6 py-3 font-bold rounded hover:bg-[#a57053] transition">
+            Send Message
+        </button>
+    </div>
+</form>
+
+        </div>
+    </section>
+    <!-- Contact Form Section ends here -->
+
+
+    <!-- Contact Info Section -->
+    <section class="py-12 px-4 bg-[#EED6BE] rounded-lg m-5">
+        <div class="container mx-auto max-w-4xl text-center">
+            <h2 class="text-3xl font-bold text-[#602B0F] mb-6">Our Contact Info</h2>
+            <p class="text-[#733D25] mb-2 m-auto flex justify-center items-center"><img src="icons/location.png" class="h-4 rotate-vertical" alt="location-icon"> 123 Brew Street, Coffee City, NY</p>
+            <p class="text-[#733D25] mb-2 m-auto flex justify-center items-center gap-1"><img src="icons/phone.png" class="h-4 rotate-vertical" alt="phone-icon"> +1 (234) 567-890</p>
+            <p class="text-[#733D25] mb-2 m-auto flex justify-center items-center gap-1"><img src="icons/email.png" class="h-4 rotate-vertical" alt="email-icon"> hello@comeetcafe.com</p>
+            <p class="text-[#733D25] mt-4">Follow us on social media for updates and offers:</p>
+            <div class="flex justify-center gap-4 mt-2">
+                <a href="https://www.facebook.com/" target="_blank"><img src="icons/chocoface.png" alt="Facebook" class="h-10 animate-bounce-gentle"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="icons/chocoinsta.png" alt="Instagram" class="h-10 animate-bounce-gentle"></a>
+                <a href="https://www.twitter.com/" target="_blank"><img src="icons/chocotwitt.png" alt="Twitter" class="h-10 animate-bounce-gentle"></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Info Section ends here -->
+
+    <!-- Footer Section -->
+    <footer class="bg-[#733D25] text-white py-4 mt-8">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-center items-center px-4">
+
+    <p>&copy; 2025 CoMeet | All Rights Reserved.</p>
+  </div>
+</footer>
+    <!-- Footer Section ends here -->
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

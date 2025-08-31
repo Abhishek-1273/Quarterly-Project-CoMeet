@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Welcome to CoMeet Café - a cozy place to enjoy freshly brewed coffee, pastries, and a warm atmosphere. Explore our menu, meet our team, and experience the love behind every cup.">
+    <title>CoMeet - Have Coffee and Meet</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+
+<body class="bg-[#FAF7F2]">
+
+    <!-- Navbar -->
+    <nav class="bg-[#EED6BE] rounded-t-lg relative">
+        <div class="container mx-auto max-w-screen-xl flex justify-between items-center px-4 py-2">
+            <!-- Logo -->
+            <div class="flex items-center">
+                <img class="h-16" src="./icons/logo.png" alt="Coffee icon">
+                <img class="h-10" src="./icons/name.png" alt="Coffee icon">
+            </div>
+
+            <!-- Links -->
+            <ul class="nav-links hidden md:flex gap-6 font-bold">
+                <li><a href="index.html"
+                        class="link-underline text-[#733D25] text-2xl hover:text-[#A0522D] px-2">Home</a></li>
+
+                <li><a href="menu.html"
+                        class="link-underline text-[#733D25] text-2xl hover:text-[#A0522D] px-2">Menu</a></li>
+
+                <li><a href="about.html" class="link-underline text-[#733D25] text-2xl hover:text-[#A0522D] px-2">About
+                        Us</a></li>
+
+                <li><a href="contact.html"
+                        class="link-underline text-[#733D25] text-2xl hover:text-[#A0522D] px-2">Contact</a></li>
+            </ul>
+
+
+
+
+            <!-- Mobile Menu Button -->
+            <button class="hamburgerBtn md:hidden text-[#733D25] text-2xl font-bold">☰</button>
+
+            <!-- Mobile Dropdown Menu -->
+            <ul
+                class="mobile-menu hidden absolute top-16 right-4 flex-col p-4 space-y-0 text-[#332025] font-medium md:hidden z-50 bg-white rounded-lg shadow-lg">
+                <li class="border-b border-[#733D25] last:border-b-0">
+                    <a href="index.html" class="block py-2 text-[#733D25] hover:text-[#A0522D]">Home</a>
+                </li>
+                <li class="border-b border-[#733D25] last:border-b-0">
+                    <a href="menu.html" class="block py-2 text-[#733D25] hover:text-[#A0522D]">Menu</a>
+                </li>
+                <li class="border-b border-[#733D25] last:border-b-0">
+                    <a href="about.html" class="block py-2 text-[#733D25] hover:text-[#A0522D]">About Us</a>
+                </li>
+                <li>
+                    <a href="contact.html" class="block py-2 text-[#733D25] hover:text-[#A0522D]">Contact</a>
+                </li>
+            </ul>
+    </nav>
+
+    <!-- Navbar ends here -->
+
+    <!-- Hero Section -->
+    <section
+        class="w-full bg-cover bg-center flex items-center overflow-hidden justify-center text-center px-4 rounded-b-lg relative h-[500px]"
+        loading="lazy" style="background-image: url('bg-img/coffee-bg.jpg')">
+
+        <div>
+            <h1
+                class="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold uppercase text-shadow-[#733D25] text-shadow-lg">
+                Coffee is a hug <br> in a mug
+            </h1>
+        </div>
+    </section>
+
+    <!-- Hero Section  ends here-->
+
+
+    <!-- Cards Section -->
+    <section class="py-12 px-4">
+        <div class="container mx-auto max-w-screen-xl">
+            <h2 class="underline text-3xl md:text-6xl sm:text-3xl font-bold text-center text-[#733D25] mb-8">Our
+                Specialties</h2>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 ">
+                <!-- Card -->
+                <div class="bg-white rounded-2xl m-[30px] md:m-0 shadow-lg overflow-hidden autoShow card-hover">
+
+                    <img src="images/cappu.jpg" alt="Cappuccino" class="w-full lg:h-75 md:h-70 sm:h-65 object-cover">
+                    <div class="p-4">
+                        <h5 class="text-xl font-bold text-[#733D25]">Cappuccino</h5>
+                        <p class="text-gray-600 text-sm mt-2">
+                            A rich, foamy espresso-based coffee with a perfect balance of milk and espresso.
+                        </p>
+                    </div>
+                    <div class="px-4 py-2 border-t">
+                        <small class="text-gray-500 font-bold">Available now</small>
+                    </div>
+                </div>
+
+
+
+                <!-- Card 2 -->
+                <div class="bg-white rounded-2xl m-[30px] md:m-0 shadow-lg overflow-hidden autoShow card-hover">
+
+                    <img src="images/latte.jpg" alt="Caffè Latte" class="w-full lg:h-75 md:h-70 sm:h-65 object-cover">
+                    <div class="p-4">
+                        <h5 class="text-xl font-bold text-[#733D25]">Caffè Latte</h5>
+                        <p class="text-gray-600 text-sm mt-2">
+                            Smooth and creamy, a latte blends espresso with steamed milk for a mild taste.
+                        </p>
+                    </div>
+                    <div class="px-4 py-2 border-t">
+                        <small class="text-gray-500 font-bold">Available now</small>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white rounded-2xl m-[30px] md:m-0 shadow-lg overflow-hidden autoShow card-hover">
+
+                    <img src="images/mocha.jpg" alt="Mocha" class="w-full lg:h-75 md:h-70 sm:h-65  object-cover">
+                    <div class="p-4">
+                        <h5 class="text-xl font-bold text-[#733D25]">Mocha</h5>
+                        <p class="text-gray-600 text-sm mt-2">
+                            Espresso with chocolate and steamed milk, perfect for coffee and cocoa lovers.
+                        </p>
+                    </div>
+                    <div class="px-4 py-2 border-t">
+                        <small class="text-gray-500 font-bold">Available now</small>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-white rounded-2xl m-[30px] md:m-0 shadow-lg overflow-hidden autoShow ">
+                    <img src="images/espresso.jpg" alt="Espresso" class="w-full lg:h-75 md:h-70 sm:h-65  object-cover">
+                    <div class="p-4">
+                        <h5 class="text-xl font-bold text-[#733D25]">Espresso</h5>
+                        <p class="text-gray-600 text-sm mt-2">
+                            Strong, rich, and pure — the essence of coffee served in a small, bold shot.
+                        </p>
+                    </div>
+                    <div class="px-4 py-2 border-t">
+                        <small class="text-gray-500 font-bold">Available now</small>
+                    </div>
+                </div>
+                <!-- Card 5 -->
+                <div class="bg-white rounded-2xl m-[30px] md:m-0 shadow-lg overflow-hidden autoShow ">
+                    <img src="images/blackcof.jpg" alt="Black Coffee"
+                        class="w-full lg:h-75 md:h-70 sm:h-65  object-cover">
+                    <div class="p-4">
+                        <h5 class="text-xl font-bold text-[#733D25]">Black Coffee</h5>
+                        <p class="text-gray-600 text-sm mt-2">
+                            Bold and pure, a classic cup that awakens the senses with its rich aroma.
+                        </p>
+                    </div>
+                    <div class="px-4 py-2 border-t">
+                        <small class="text-gray-500 font-bold">Available now</small>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="bg-white rounded-2xl m-[30px] md:m-0 shadow-lg overflow-hidden autoShow ">
+                    <img src="images/americano.jpg" alt="Americano"
+                        class="w-full lg:h-75 md:h-70 sm:h-65  object-cover">
+                    <div class="p-4">
+                        <h5 class="text-xl font-bold text-[#733D25]">Americano</h5>
+                        <p class="text-gray-600 text-sm mt-2">
+                            Smooth and slightly lighter than espresso, perfect for a long, relaxing sip.
+                        </p>
+                    </div>
+                    <div class="px-4 py-2 border-t">
+                        <small class="text-gray-500 font-bold">Available now</small>
+                    </div>
+                </div>
+
+                <!-- Card 7 -->
+                <div class="bg-white rounded-2xl m-[30px] md:m-0 shadow-lg overflow-hidden autoShow ">
+                    <img src="images/icedcoffee.jpg" alt="Iced Coffee"
+                        class="w-full lg:h-75 md:h-70 sm:h-65  object-cover">
+                    <div class="p-4">
+                        <h5 class="text-xl font-bold text-[#733D25]">Iced Coffee</h5>
+                        <p class="text-gray-600 text-sm mt-2">
+                            Refreshing and chilled, a perfect pick-me-up on a hot day.
+                        </p>
+                    </div>
+                    <div class="px-4 py-2 border-t">
+                        <small class="text-gray-500 font-bold">Available now</small>
+                    </div>
+                </div>
+
+                <!-- Card 8 -->
+                <div class="bg-white rounded-2xl m-[30px] md:m-0 shadow-lg overflow-hidden autoShow ">
+                    <img src="images/frappe.jpg" alt="Frappe" class="w-full lg:h-75 md:h-70 sm:h-65  object-cover">
+                    <div class="p-4">
+                        <h5 class="text-xl font-bold text-[#733D25]">Frappe</h5>
+                        <p class="text-gray-600 text-sm mt-2">
+                            Creamy, frothy, and chilled — an indulgent coffee treat with a smooth finish.
+                        </p>
+                    </div>
+                    <div class="px-4 py-2 border-t">
+                        <small class="text-gray-500 font-bold">Available now</small>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- Cards Section ends here -->
+
+
+    <!-- Text Content-->
+    <section class="py-10 px-5 bg-[#EED6BE] rounded-t-lg">
+        <div class="flex flex-col md:flex-row items-center gap-20 max-w-6xl mx-auto">
+            <div class="flex-1">
+                <h4 class="text-3xl text-[#602B0F] font-bold mb-4">Why Choose Us</h4>
+                <p class="mb-6 font-semibold text-[#683b23]">
+                    At CoMeet, we craft every cup of coffee with passion and precision. From selecting the finest
+                    beans
+                    to perfecting the roasting process, our commitment is to deliver an exceptional coffee experience
+                    every time. Whether you're savoring a morning espresso or enjoying a relaxing afternoon latte,
+                    our flavors will leave you inspired and refreshed.
+                </p>
+                <a href="menu.html">
+                    <button
+                        class="bg-[#602B0F] text-[#E9E6DE] font-bold px-6 py-2 rounded animate-bounce-gentle hover:bg-[#a57053] transition">
+                        Order Now
+                    </button>
+                </a>
+            </div>
+
+            <!-- Video Content -->
+            <div class="flex-1">
+                <video class="w-full h-auto rounded shadow-lg" src="video/coffee.mp4" autoplay loop muted playsinline>
+                </video>
+            </div>
+        </div>
+    </section>
+    <!-- Text Content ends here-->
+
+    <!-- About Section -->
+
+    <hr class="border-t-2 border-[#733D25] my-8 w-3/4 mx-auto rounded">
+    <section class="relative bg-cover bg-center h-[550px] rounded-b-lg overflow-hidden"
+        style="background-image: url('bg-img/aboutus.jpg');">
+        <div class="absolute inset-0 bg-opacity-40 flex flex-col justify-center items-center px-8">
+            <h2 class="text-4xl md:text-5xl font-bold text-[#733D25] bg-white mb-4 px-4 py-4 rounded-lg text-center">
+                Discover Your Perfect Coffee
+            </h2>
+            <p class="text-[#733D25] text-lg md:text-xl font-bold mb-6 px-6 py-4 bg-white rounded-lg text-center">
+                From espresso to frappe, find your favorite flavor and enjoy every sip.
+            </p>
+            <a href="about.html">
+                <button
+                    class="bg-[#733D25] text-white py-3 px-8 rounded-xl font-extrabold hover:bg-[#5a2e1d] transition">
+                    About Us
+                </button>
+            </a>
+        </div>
+    </section>
+    <!-- About Section ends here -->
+
+    <hr class="border-t-2 border-[#733D25] my-8 w-3/4 mx-auto rounded">
+
+    <!-- Customer Testimonial -->
+
+
+    <section class="py-12 bg-[#FAF7F2]">
+        <div class="max-w-5xl mx-auto text-center">
+            <h3 class="text-3xl font-bold text-[#733D25] mb-6">What Our Customers Say</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white rounded-xl p-6 shadow-md m-5 animate-slideInLeft card-hover">
+                    <p class="text-gray-600 mb-4">"Best coffee I've ever had! Truly amazing aroma and taste."
+                    </p>
+                    <h5 class="font-bold text-[#733D25]">— Sarah L.</h5>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow-md m-5 autoShow2 card-hover">
+                    <p class="text-gray-600 mb-4">"Perfect place to relax with a cup of latte. Highly
+                        recommend!"</p>
+                    <h5 class="font-bold text-[#733D25]">— Michael R.</h5>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow-md m-5 animate-slideInRight card-hover">
+                    <p class="text-gray-600 mb-4">"Espresso is top-notch, and frappe is heavenly."</p>
+                    <h5 class="font-bold text-[#733D25]">— Emma T.</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Testimonial section ends here -->
+
+    <!-- Subscribe Section -->
+
+
+    <hr class="border-t-2 border-[#733D25] my-8 w-3/4 mx-auto rounded">
+    <section class="py-12 bg-[#EED6BE] text-center">
+        <h3 class="text-3xl font-bold text-[#602B0F] mb-4">Stay Updated</h3>
+        <div class="flex justify-center">
+            <p class="mb-6 text-[15px] m-5 md:text-3xl text-[#683b23] font-bold">
+                <img class="h-5 inline" src="icons/coffeeicon.png" alt="coffee icon">
+                Subscribe to get exclusive offers and coffee tips.
+                <img class="h-5 inline" src="icons/coffeeicon.png" alt="coffee icon">
+            </p>
+        </div>
+
+        <div id="subscribeBox" class="flex justify-center flex-col sm:flex-row m-5">
+            <input type="email" placeholder="Enter your email"
+                class="email-input p-3 w-full sm:w-80 border bg-white rounded-lg sm:rounded-l-lg sm:rounded-r-none">
+
+            <button class="subscribe-btn bg-[#602B0F] text-white px-6 py-3 font-bold hover:bg-[#a57053] transition mt-2 sm:mt-0 
+      rounded-lg sm:rounded-r-lg sm:rounded-l-none w-full sm:w-auto lg:w-44">
+                Subscribe
+            </button>
+        </div>
+        <p id="subscribeMessage" class="mt-4 text-lg font-semibold"></p>
+    </section>
+
+    <!-- Subscribe Section ends here -->
+
+    <!-- Footer Section -->
+
+    <footer class="bg-[#733D25] text-white py-4 mt-8">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center px-4">
+
+            <div class="flex gap-4 mt-4 md:mt-0 mb-2">
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                    <img src="icons/facebook.png" alt="Facebook" class="h-10 animate-bounce-gentle">
+                </a>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                    <img src="icons/instagram.png" alt="Instagram" class="h-10 animate-bounce-gentle">
+                </a>
+                <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer">
+                    <img src="icons/twitter.png" alt="Twitter" class="h-10 animate-bounce-gentle">
+                </a>
+            </div>
+            <p>&copy; 2025 CoMeet | All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Footer Section  ends here-->
+
+    <script src="script.js"></script>
+</body>
+
+</html>

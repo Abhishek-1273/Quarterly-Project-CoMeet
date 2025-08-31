@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Welcome to CoMeet Café - a cozy place to enjoy freshly brewed coffee, pastries, and a warm atmosphere. Explore our menu, meet our team, and experience the love behind every cup.">
+
+    <title>CoMeet - Have Coffee and Meet</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+
+<body class="bg-[#FAF7F2]">
+
+    <!-- Navbar -->
+    <nav class="bg-[#EED6BE] rounded-t-lg relative">
+        <div class="container mx-auto max-w-screen-xl flex justify-between items-center px-4 py-2">
+            <!-- Logo -->
+            <div class="flex items-center">
+                <img class="h-16" src="./icons/logo.png" alt="Coffee icon">
+                <img class="h-10" src="./icons/name.png" alt="Coffee icon">
+            </div>
+
+            <!-- Links -->
+            <ul class="nav-links hidden md:flex gap-6 font-bold">
+                <li><a href="index.html"
+                        class="link-underline text-[#733D25] text-2xl hover:text-[#A0522D] px-2">Home</a></li>
+
+                <li><a href="menu.html"
+                        class="link-underline text-[#733D25] text-2xl hover:text-[#A0522D] px-2">Menu</a></li>
+
+                <li><a href="about.html" class="link-underline text-[#733D25] text-2xl hover:text-[#A0522D] px-2">About
+                        Us</a></li>
+
+                <li><a href="contact.html"
+                        class="link-underline text-[#733D25] text-2xl hover:text-[#A0522D] px-2">Contact</a></li>
+            </ul>
+
+
+
+
+            <!-- Mobile Menu Button -->
+            <button class="hamburgerBtn md:hidden text-[#733D25] text-2xl font-bold">☰</button>
+
+            <!-- Mobile Dropdown Menu -->
+            <ul
+                class="mobile-menu hidden absolute top-16 right-4 flex-col p-4 space-y-0 text-[#332025] font-medium md:hidden z-50 bg-white rounded-lg shadow-lg">
+                <li class="border-b border-[#733D25] last:border-b-0">
+                    <a href="index.html" class="block py-2 text-[#733D25] hover:text-[#A0522D]">Home</a>
+                </li>
+                <li class="border-b border-[#733D25] last:border-b-0">
+                    <a href="menu.html" class="block py-2 text-[#733D25] hover:text-[#A0522D]">Menu</a>
+                </li>
+                <li class="border-b border-[#733D25] last:border-b-0">
+                    <a href="about.html" class="block py-2 text-[#733D25] hover:text-[#A0522D]">About Us</a>
+                </li>
+                <li>
+                    <a href="contact.html" class="block py-2 text-[#733D25] hover:text-[#A0522D]">Contact</a>
+                </li>
+            </ul>
+    </nav>
+
+    <!-- Navbar ends here -->
+
+    <!-- Hero Section -->
+    <section
+        class="w-full bg-cover bg-center flex items-center justify-center text-center px-4 rounded-b-lg relative h-[550px]"
+        style="background-image: url('bg-img/aboutbg.png')" loading="lazy">
+        <div>
+            <h1
+                class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#EED6BE] text-shadow-lg m-6 lg:m-2 md:m-2 text-shadow-[#733D25] leading-tight">
+                About CoMeet
+            </h1>
+        </div>
+    </section>
+
+    <!-- Hero Section ends here -->
+
+    <hr class="border-t-2 border-[#733D25] my-8 w-3/4 mx-auto rounded">
+
+    <!-- About Content Section -->
+    <section class="py-12 px-4">
+        <div class="container mx-auto max-w-6xl flex flex-col md:flex-row items-center gap-6">
+            <!-- Image -->
+            <div class="flex-1 m-5 animate-slideInLeft">
+                <h2 class="text-3xl md:text-4xl font-bold text-[#733D25] mb-6 text-center">Meet Our Family ☕❤
+                </h2>
+                <p class="text-[#683b23] text-lg font-semibold mb-4">
+                    Every café has a story—but ours is stitched together with people, memories, and a shared dream.
+                    This café wasn't born out of business plans or profit goals—it was born out of love.
+                    Once, coffee wasn't just a drink for me—it was a memory. I still remember those quiet mornings,
+                    sitting with people I loved, sharing laughter over a simple cup. Life changed, people drifted
+                    apart, but the warmth of those moments stayed in my heart.
+                </p>
+                <p class="text-[#683b23] text-lg font-semibold mb-4">
+                    Long before this café opened, life was moving too fast. Everyone was chasing something—jobs,
+                    deadlines, money—but somewhere in that rush, we were all losing the simple joy of sitting together,
+                    talking, and sharing warmth over a cup. That's when the idea was born: a café not just for coffee,
+                    but for connection.
+                </p>
+            </div>
+            <div class="flex-1 m-5 animate-slideInRight">
+                <img src="team/family.png" loading="lazy" alt="Our café family gathered together"
+                    class="rounded-2xl p-5 bg-[#EED6BE] shadow-lg lg:m-2 md:m-2 w-full">
+            </div>
+    </section>
+    <hr class="border-t-2 border-[#733D25] my-8 w-3/4 mx-auto rounded">
+
+    <section class="py-12 px-4">
+        <div class="container mx-auto max-w-6xl flex flex-col md:flex-row items-center gap-6">
+            <!-- Text -->
+            <!-- Image -->
+            <div class="flex-1 m-5 animate-slideInLeft">
+                <img src="team/couple.png" loading="lazy" alt="Coffee beans and brewing"
+                    class="rounded-2xl p-5 bg-[#EED6BE] shadow-lg lg:m-2 md:m-2 w-full">
+            </div>
+            <div class="flex-1 m-5 animate-slideInRight">
+                <h2 class="text-3xl md:text-4xl font-bold text-[#733D25] mb-6">Why We Opened This Café 🌿
+                </h2>
+                <p class="text-[#683b23] text-lg font-semibold mb-6">
+                    We didn't open this café just to sell coffee—we opened it to slow down the world. To give people a
+                    place
+                    where conversations matter more than notifications, where memories can be created over something as
+                    simple
+                    as a latte.
+
+                </p>
+                <p class="text-[#683b23] text-lg font-semibold mb-6">
+                    So when you sit here with your cup, I hope you don't just taste coffee—I hope you feel the love that
+                    built this place.
+                    This café is our way of saying: pause, breathe, and let life be a little softer.
+                </p>
+                <a href="menu.html">
+                    <button class="bg-[#602B0F] text-white px-6 py-3 font-bold rounded hover:bg-[#a57053] transition">
+                        Explore Our Menu
+                    </button>
+                </a>
+            </div>
+    </section>
+
+    <!-- About Content Section ends here -->
+
+
+    <hr class="border-t-2 border-[#733D25] my-8 w-3/4 mx-auto rounded">
+
+    <!-- Team Section -->
+    <section class="py-12 bg-[#EED6BE] text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-[#602B0F] mb-10">☕ Our Café Team</h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 max-w-6xl mx-auto">
+
+            <!-- Haruto -->
+            <div class="bg-white rounded-2xl p-6  shadow-lg m-6 lg:m-2 md:m-2 autoShow">
+                <img src="team/haruto.jpg" alt="Portrait of Haruto Tanaka, Café Owner and Manager"
+                    class="w-32 h-32 mx-auto rounded-full mb-4 object-cover">
+                <h5 class="text-[#733D25] font-bold mb-2">Haruto Tanaka</h5>
+                <h6 class="text-gray-600 text-sm font-semibold">Café Owner / Manager</h6>
+                <p class="text-gray-600 text-sm leading-relaxed mt-2">The heart of the café. He started this place to
+                    bring people together and make it more than just a coffee shop—a second home.</p>
+            </div>
+
+            <!-- Yuki -->
+            <div class="bg-white rounded-2xl p-6  shadow-lg m-6 lg:m-2 md:m-2 autoShow">
+                <img src="team/yuki.jpg" alt="Portrait of Yuki Hayashi, Latte Artist and Designer"
+                    class="w-32 h-32 mx-auto rounded-full mb-4 object-cover">
+                <h5 class="text-[#733D25] font-bold mb-2">Yuki Hayashi</h5>
+                <h6 class="text-gray-600 text-sm font-semibold">Latte Artist / Designer</h6>
+                <p class="text-gray-600 text-sm leading-relaxed mt-2">Loves creating beautiful latte art and sketching
+                    menu boards. Adds an artistic touch to the café's atmosphere.</p>
+            </div>
+
+            <!-- Riku -->
+            <div class="bg-white rounded-2xl p-6  shadow-lg m-6 lg:m-2 md:m-2 autoShow">
+                <img src="team/riku.jpg" alt="Portrait of Riku Yamamoto, Barista"
+                    class="w-32 h-32 mx-auto rounded-full mb-4 object-cover">
+                <h5 class="text-[#733D25] font-bold mb-2">Riku Yamamoto</h5>
+                <h6 class="text-gray-600 text-sm font-semibold">Barista</h6>
+                <p class="text-gray-600 text-sm leading-relaxed mt-2">The perfectionist of the team. He experiments with
+                    brewing techniques and makes sure every espresso shot is flawless.</p>
+            </div>
+
+            <!-- Maya -->
+            <div class="bg-white rounded-2xl p-6  shadow-lg m-6 lg:m-2 md:m-2 autoShow">
+                <img src="team/maya.jpg" alt="Portrait of Maya Kuroki, Cashier"
+                    class="w-32 h-32 mx-auto rounded-full mb-4 object-cover">
+                <h5 class="text-[#733D25] font-bold mb-2">Maya Kuroki</h5>
+                <h6 class="text-gray-600 text-sm font-semibold">Cashier</h6>
+                <p class="text-gray-600 text-sm leading-relaxed mt-2">Lively and witty, she handles the counter with
+                    charm. Customers love chatting with her while paying their bills.</p>
+            </div>
+
+            <!-- Aoi -->
+            <div class="bg-white rounded-2xl p-6  shadow-lg m-6 lg:m-2 md:m-2 autoShow">
+                <img src="team/aoi.jpg" alt="Portrait of Aoi Minami, Customer Relations"
+                    class="w-32 h-32 mx-auto rounded-full mb-4 object-cover">
+                <h5 class="text-[#733D25] font-bold mb-2">Aoi Minami</h5>
+                <h6 class="text-gray-600 text-sm font-semibold">Customer Relations</h6>
+                <p class="text-gray-600 text-sm leading-relaxed mt-2">Calm and composed, she greets customers, listens
+                    to their stories, and makes them feel at home.</p>
+            </div>
+
+            <!-- Akira -->
+            <div class="bg-white rounded-2xl p-6  shadow-lg m-6 lg:m-2 md:m-2 autoShow">
+                <img src="team/akira.jpg" alt="Portrait of Akira Fujimoto, Roast Master"
+                    class="w-32 h-32 mx-auto rounded-full mb-4 object-cover">
+                <h5 class="text-[#733D25] font-bold mb-2">Akira Fujimoto</h5>
+                <h6 class="text-gray-600 text-sm font-semibold">Roast Master</h6>
+                <p class="text-gray-600 text-sm leading-relaxed mt-2">The mentor figure. He carefully roasts beans
+                    in-house and teaches the younger staff the art of patience.</p>
+            </div>
+
+            <!-- Sakura -->
+            <div class="bg-white rounded-2xl p-6  shadow-lg m-6 lg:m-2 md:m-2 autoShow">
+                <img src="team/sakura.jpg" alt="Portrait of Sakura Ito, Waitress"
+                    class="w-32 h-32 mx-auto rounded-full mb-4 object-cover">
+                <h5 class="text-[#733D25] font-bold mb-2">Sakura Ito</h5>
+                <h6 class="text-gray-600 text-sm font-semibold">Waitress</h6>
+                <p class="text-gray-600 text-sm leading-relaxed mt-2">Bright and cheerful, she moves around the café
+                    with endless energy. Takes orders, serves coffee, and always brings a smile to the tables.</p>
+            </div>
+
+            <!-- Hana -->
+            <div class="bg-white rounded-2xl p-6  shadow-lg m-6 lg:m-2 md:m-2 autoShow">
+                <img src="team/hana.jpg" alt="Portrait of Hana Shimizu, Baker and Snacks Chef"
+                    class="w-32 h-32 mx-auto rounded-full mb-4 object-cover">
+                <h5 class="text-[#733D25] font-bold mb-2">Hana Shimizu</h5>
+                <h6 class="text-gray-600 text-sm font-semibold">Baker / Snacks Chef</h6>
+                <p class="text-gray-600 text-sm leading-relaxed mt-2">Sweet and creative. She bakes pastries, cookies,
+                    and cakes that perfectly complement the coffee.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Team Section ends here -->
+
+    <!-- Footer Section -->
+    <footer class="bg-[#733D25] text-white py-4 mt-8">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center px-4">
+
+            <div class="flex gap-4 mt-4 md:mt-0 mb-2">
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                    <img src="icons/facebook.png" alt="Facebook" class="h-10 animate-bounce-gentle">
+                </a>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                    <img src="icons/instagram.png" alt="Instagram" class="h-10 animate-bounce-gentle">
+                </a>
+                <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer">
+                    <img src="icons/twitter.png" alt="Twitter" class="h-10 animate-bounce-gentle">
+                </a>
+            </div>
+            <p>&copy; 2025 CoMeet | All Rights Reserved.</p>
+        </div>
+    </footer>
+    <!-- Footer Section ends here-->
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
